@@ -1,0 +1,629 @@
+z/* ================= HERO BACKGROUND STYLE ================= */
+
+.tw-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("images/home-page.jpg") no-repeat right center;
+    background-size: contain;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+    overflow: hidden;
+}
+
+/* Dark Gradient Overlay */
+.tw-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.85) 40%,
+        rgba(0,0,0,0.5) 70%,
+        rgba(0,0,0,0.1) 100%
+    );
+}
+
+/* TEXT CONTENT */
+.tw-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    color: #fff;
+}
+
+.tw-hero-content h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.tw-hero-content h1 span {
+    color: #f4b400;
+}
+
+.tw-hero-content p {
+    margin: 20px 0 35px;
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+/* BUTTONS */
+.tw-hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-primary {
+    background: #f4b400;
+    color: #000;
+    padding: 14px 32px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #ffcc33;
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    border: 2px solid #f4b400;
+    color: #f4b400;
+    padding: 14px 32px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-outline:hover {
+    background: #f4b400;
+    color: #000;
+}
+
+
+
+/* ================= EV PERFORMANCE SECTION ================= */
+
+.ev-performance {
+  padding: 100px 20px;
+  background: linear-gradient(180deg,#fff9ec,#ffffff);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header .badge {
+  display: inline-block;
+  background: #ffcc00;
+  color: #000;
+  padding: 6px 14px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  margin-bottom: 15px;
+}
+
+.section-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.section-header p {
+  max-width: 700px;
+  margin: auto;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Grid Layout */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Feature Card */
+.feature-card {
+  background: #ffffff;
+  padding: 35px 25px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid #f1f1f1;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon */
+.feature-card .icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px auto;
+  background: #ffcc00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 28px;
+  color: #000;
+  transition: 0.3s;
+}
+
+.feature-card:hover .icon {
+  background: #000;
+  color: #ffcc00;
+}
+
+.feature-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.feature-card p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-header h2 {
+    font-size: 28px;
+  }
+
+  .ev-performance {
+    padding: 70px 15px;
+  }
+}
+
+
+
+
+
+/* KYC SECTION */
+
+.kyc-section{
+padding:80px 20px;
+background: linear-gradient(180deg,#ffffff,#fff9ec);
+}
+
+.kyc-container{
+max-width:1300px;
+margin:auto;
+text-align:center;
+}
+
+/* Header */
+
+.kyc-header h2{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.kyc-header p{
+color:#666;
+max-width:600px;
+margin:auto;
+margin-bottom:70px;
+line-height:1.6;
+}
+.kyc-header span{
+color:#f4b400;
+}
+
+/* Flow Layout */
+
+.kyc-flow{
+display:flex;
+align-items:center;
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+}
+
+
+/* Step Card */
+
+.kyc-step{
+width:180px;
+background:white;
+padding:30px 20px;
+border-radius:20px;
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
+transition:all 0.35s ease;
+border:1px solid #eee;
+}
+
+.kyc-step:hover{
+transform:translateY(-8px);
+box-shadow:0 25px 60px rgba(0,0,0,0.15);
+}
+
+
+/* Icon Circle */
+
+.kyc-icon{
+width:65px;
+height:65px;
+margin:auto;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+background:linear-gradient(135deg,#f4b400,#ffcc33);
+margin-bottom:12px;
+}
+
+.kyc-icon svg{
+color:white;
+width:30px;
+height:30px;
+}
+
+.kyc-icon.success{
+background:linear-gradient(135deg,#22c55e,#4ade80);
+}
+
+
+/* Step Text */
+
+.kyc-step h3{
+font-size:18px;
+margin-bottom:6px;
+}
+
+.kyc-step p{
+font-size:14px;
+color:#666;
+line-height:1.5;
+}
+
+
+/* Arrow Connector */
+
+.kyc-arrow{
+width:30px;
+height:3px;
+background:linear-gradient(90deg,#f4b400,#ffcc33);
+position:relative;
+}
+
+.kyc-arrow::after{
+content:"";
+position:absolute;
+right:-3px;
+top:-2px;
+border-left:6px solid #ffcc33;
+border-top:4px solid transparent;
+border-bottom:4px solid transparent;
+}
+
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.kyc-flow{
+flex-direction:column;
+}
+
+.kyc-arrow{
+width:3px;
+height:40px;
+}
+
+.kyc-arrow::after{
+display:none;
+}
+
+}
+
+
+
+
+
+/* SECTION */
+
+.battery-premium{
+padding:100px 20px;
+background: linear-gradient(180deg,#fff9ec,#ffffff);
+}
+
+
+/* HEADER */
+
+.battery-header{
+text-align:center;
+max-width:720px;
+margin:auto;
+margin-bottom:90px;
+}
+
+.battery-header h2{
+font-size:36px;
+font-weight:700;
+margin-bottom:12px;
+}
+
+
+
+.battery-header h3{
+    font-size: 20px;
+}
+
+
+.battery-header p{
+color:#666;
+line-height:1.6;
+font-size:17px;
+}
+
+
+
+.battery-header span{
+color:#f4b400;
+}
+
+/* LAYOUT */
+
+.battery-layout{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:90px;
+align-items:center;
+}
+
+
+/* FEATURES GRID */
+
+.battery-features{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:25px;
+}
+
+
+/* CARD */
+
+.battery-card{
+background:white;
+padding:28px;
+border-radius:18px;
+box-shadow:0 15px 40px rgba(0,0,0,0.06);
+transition:all .35s ease;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+}
+
+.battery-icon{
+width:60px;
+height:60px;
+background:linear-gradient(#f4b400,#ffcc33);
+border-radius:14px;
+display:flex;
+align-items:center;
+justify-content:center;
+margin-bottom:12px;
+}
+
+.battery-icon svg{
+color:black;
+width:32px;
+height:32px;
+}
+
+.battery-card h3{
+margin-bottom:8px;
+}
+
+.battery-card p{
+color:#666;
+font-size:15px;
+line-height:1.6;
+}
+/* PRODUCT IMAGE */
+
+.battery-product{
+display:flex;
+justify-content:center;
+}
+
+.battery-product img{
+width:400px;
+height: 520px;
+border-radius:20px;
+box-shadow:0 35px 90px rgba(0,0,0,0.18);
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.battery-layout{
+grid-template-columns:1fr;
+gap:50px;
+text-align:center;
+}
+
+.battery-features{
+grid-template-columns:1fr;
+}
+
+}
+
+
+
+.tesla-ev {
+  padding: 120px 20px;
+  background:linear-gradient(180deg,#ffffff,#fff9ec);
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+.tesla-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* HEADER */
+.tesla-head h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #111;
+}
+
+.tesla-head span {
+  background: linear-gradient(90deg, #f4b400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tesla-head p {
+  color: #777;
+  margin-top: 10px;
+}
+
+/* SLIDER */
+.tesla-slider-box {
+  margin: 60px auto;
+}
+
+.tesla-earn {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* CUSTOM SLIDER */
+input[type="range"] {
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(to right, #00c896, #ddd);
+  border-radius: 10px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #00c896;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0,200,150,0.5);
+}
+
+/* RESULT */
+.tesla-result {
+  margin: 40px 0;
+}
+
+.tesla-result h1 {
+  font-size: 72px;
+  font-weight: 700;
+  color: #00c896;
+  text-shadow: 0 10px 40px rgba(0,200,150,0.2);
+}
+
+.tesla-result p {
+  color: #888;
+}
+
+/* CARDS */
+.tesla-cards {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.tesla-card {
+  flex: 1;
+  min-width: 300px;
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  background: rgba(255,255,255,0.7);
+  border: 1px solid #eee;
+  transition: all 0.4s ease;
+}
+
+/* HOVER */
+.tesla-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.1);
+}
+
+/* TEXT */
+.tesla-card h3 {
+  margin-bottom: 17px;
+}
+
+.tesla-card p {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  color: #444;
+}
+
+.tesla-card .total {
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+/* COLORS */
+.petrol {
+  border-top: 6px solid #ff4d4d;
+}
+
+.ev {
+  border-top: 6px solid #f4b400;
+}
+
+/* ANIMATION */
+.tesla-container {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+

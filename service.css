@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f9fafb;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 60px;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 800;
+  color: #f4b400;
+}
+
+.navbar-links a {
+  margin: 0 14px;
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+}
+
+.navbar nav a.active {
+  color: #f4b4000;
+}
+
+.app-btn {
+  background: #f5b800;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+
+/* ================= SERVICES MEGA MENU ================= */
+
+
+/* mega menu box */
+.services-mega {
+  display: none; /* 🔥 hidden by default */
+  gap: 30px;
+  padding: 25px;
+  width: 700px;
+  background: #f8f8f8;
+  border-radius: 14px;
+  margin-top: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  z-index: 1000;
+}
+
+/* show on hover */
+#servicesBtn:hover + .services-menu .services-mega,
+.services-menu:hover .services-mega {
+  display: flex;
+}
+
+/* ================= COLUMNS ================= */
+.service-section {
+  flex: 1;
+}
+
+.service-section h3 {
+  margin-bottom: 14px;
+  color: #f4b400;
+  font-size: 18px;
+}
+
+/* divider */
+.services-divider {
+  width: 1px;
+  background: #ddd;
+}
+
+/* ================= CARDS ================= */
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 12px;
+  margin-bottom: 14px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.card img {
+  width: 100%;
+  max-width: 220px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+
+

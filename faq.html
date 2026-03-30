@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQs | Jibon</title>
+
+  <style>
+    :root {
+      --yellow: #f5c400;
+      --dark: #1f2937;
+      --gray: #6b7280;
+      --light: #f9fafb;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: #ffffff;
+      color: var(--dark);
+    }
+
+    /* NAVBAR */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 60px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--yellow);
+    }
+
+    nav a {
+      margin: 0 14px;
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--yellow);
+    }
+
+    .app-btn {
+      background: var(--yellow);
+      padding: 10px 18px;
+      border-radius: 20px;
+      color: #000;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    /* FAQ SECTION */
+    .faq-section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .faq-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .faq-title h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .faq-title p {
+      color: var(--gray);
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .faq-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    /* FAQ ITEM */
+    .faq-item {
+      border: 1px solid #eee;
+      border-radius: 12px;
+      padding: 18px 20px;
+      cursor: pointer;
+      transition: 0.3s;
+      background: #fff;
+    }
+
+    .faq-item:hover {
+      border-color: var(--yellow);
+    }
+
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+    }
+
+    .faq-question span {
+      font-size: 20px;
+      color: var(--yellow);
+    }
+
+    .faq-answer {
+      margin-top: 12px;
+      font-size: 15px;
+      color: var(--gray);
+      display: none;
+      line-height: 1.6;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .faq-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="logo">JIBON</div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQs</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <a href="#" class="app-btn">Get the App</a>
+  </header>
+
+  <!-- FAQ SECTION -->
+  <section class="faq-section">
+
+    <div class="faq-title">
+      <h1>Frequently Asked Questions</h1>
+      <p>
+        Everything you need to know about Jibon, our platform, and how we’re shaping
+        a smarter way to move in cities.
+      </p>
+    </div>
+
+    <div class="faq-container">
+
+      <div class="faq-item">
+        <div class="faq-question">
+          What is Jibon and what problem does it solve?
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          Jibon is a mobility-first platform designed to simplify everyday commuting.
+          We focus on reducing friction in urban movement by combining smart technology
+          with user-friendly experiences.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          Do I need the app to use Jibon services?
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          Yes. Our website is built for discovery and information. All core actions
+          such as booking, managing rides, and tracking usage happen seamlessly
+          inside the Jibon mobile app.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          Is Jibon available in all cities?
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          We are expanding step by step. Availability depends on city readiness,
+          infrastructure, and partnerships. Updates are always announced in the app.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          How is Jibon different from other mobility platforms?
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          Jibon is built with an app-first mindset, clean design philosophy, and
+          long-term sustainability goals. We prioritize reliability, simplicity,
+          and user trust over complexity.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          Can businesses collaborate with Jibon?
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          Absolutely. We work with logistics partners, enterprises, and local teams
+          to create tailored mobility solutions. Reach out via our contact page.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          What’s next for Jibon?
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          We’re focused on scaling responsibly, improving user experience, and
+          continuously innovating to make daily movement easier and smarter.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    const items = document.querySelectorAll(".faq-item");
+
+    items.forEach(item => {
+      item.addEventListener("click", () => {
+        item.classList.toggle("active");
+      });
+    });
+  </script>
+
+</body>
+</html>
